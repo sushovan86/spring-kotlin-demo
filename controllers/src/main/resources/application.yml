@@ -1,0 +1,28 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgres://kmvckmre:p-Xur4NdDzV7L-V6rk_rEQVw_68WIJaV@satao.db.elephantsql.com:5432/kmvckmre
+    name: kmvckmre
+    username: kmvckmre
+    password: p-Xur4NdDzV7L-V6rk_rEQVw_68WIJaV
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+  datasource:
+    url: postgres://kmvckmre:p-Xur4NdDzV7L-V6rk_rEQVw_68WIJaV@satao.db.elephantsql.com:5432/kmvckmre
+    name: kmvckmre
+    username: kmvckmre
+    password: p-Xur4NdDzV7L-V6rk_rEQVw_68WIJaV
+  devtools:
+    livereload:
+      enabled: true
+      port: 35729
+
+server:
+  error:
+    include-stacktrace: NEVER
+
+application:
+  rsocket:
+    host: localhost
+    port: 9090
