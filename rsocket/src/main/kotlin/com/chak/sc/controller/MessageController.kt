@@ -26,7 +26,7 @@ class MessageController(private val productRepository: ProductRepository) {
     @MessageMapping("bot.message")
     fun broadcastRequestLogged() = flow {
         while (true) {
-            emit(Message(id = UUID.randomUUID(), method = "roscket", uri = "bot.message"))
+            emit(Message(id = UUID.randomUUID(), method = "rsocket", uri = "bot.message"))
             delay(5000)
         }
     }
